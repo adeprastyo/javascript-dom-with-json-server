@@ -1,0 +1,17 @@
+{
+	"name": "html-final-project-hospital-app",
+	"course": "Basic Frontend Web Development",
+	"title": "Final Project - Hospital App",
+	"order": 999,
+	"topics": [
+		"HTML",
+		"CSS",
+		"DOM"
+	],
+	"image": "nodejs-basic",
+	"command": "npm run test",
+	"totalTestCase": 4,
+	"metadata": {
+		"type": "final-project"
+	}
+}

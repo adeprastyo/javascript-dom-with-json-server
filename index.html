@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Hospital Apps</title>
+  </head>
+  <body class="w-screen min-h-screen flex justify-center p-12 bg-slate-200">
+    <!-- container -->
+    <div class="w-full flex gap-7 rounded-lg">
+      <!-- sidebar -->
+      <div class="w-1/5 p-7 rounded-md text-white bg-blue-500">
+        <h1 class="font-bold mb-4">Hospital App</h1>
+        <hr />
+        <p class="mt-4 font-light">Patient List</p>
+      </div>
+
+      <!-- main -->
+      <div class="w-4/5 pt-8">
+        <!-- header-main -->
+        <div class="w-full flex justify-between items-center pr-4">
+          <p class="text-gray-500 font-bold">Patient List</p>
+          <div class="flex flex-row gap-2">
+            <p class="text-gray-500 font-bold">Admin</p>
+            <img class="w-7 h-7 rounded-full" src="assets/user.png" alt="" />
+          </div>
+        </div>
+
+        <!-- Form & Data Table -->
+        <div class="w-full rounded-md bg-white p-5 mb-3 mt-7">
+          <form id="form-patient" action="">
+            <!-- Fullname -->
+            <div class="flex flex-col mb-4">
+              <label for="" class="font-bold">Fullname</label>
+              <input
+                id="input-name"
+                type="text"
+                class="mt-1 w-full px-3 py-2 border border-slate-400 rounded-md text-sm font-medium shadow-md placeholder-slate-400 focus:outline-sky-500"
+              />
+            </div>
+
+            <!-- Birth Day -->
+            <div class="flex flex-col mb-4">
+              <label for="" class="font-bold">Birth Date</label>
+              <input
+                id="input-date"
+                type="date"
+                class="mt-1 w-full px-3 py-2 border border-slate-400 rounded-md text-sm font-medium shadow-md placeholder-slate-400 focus:outline-sky-500"
+              />
+            </div>
+
+            <!-- Gender -->
+            <div class="flex flex-col mb-4">
+              <label for="" class="font-bold">Gender</label>
+              <select
+                id="input-gender"
+                value=""
+                class="mt-1 w-full px-3 py-2 bg-slate-200 border border-slate-400 rounded-md text-sm font-medium shadow-md placeholder-slate-400 focus:outline-sky-500"
+              >
+                <option name="" id="">Male</option>
+                <option name="" id="">Female</option>
+              </select>
+            </div>
+
+            <!-- Room Class & Insurance's Container -->
+            <div class="flex flex-row gap-5">
+              <!-- Room Class -->
+              <div class="flex flex-col w-1/2 mb-4">
+                <label for="" class="font-bold">Room Class</label>
+                <select
+                  id="input-room"
+                  value=""
+                  class="mt-1 w-full px-3 py-2 bg-slate-200 border border-slate-400 rounded-md text-sm font-medium shadow-md placeholder-slate-400 focus:outline-sky-500"
+                >
+                  <option name="" id="">VVIP</option>
+                  <option name="" id="">VIP</option>
+                  <option name="" id="">1</option>
+                  <option name="" id="">2</option>
+                  <option name="" id="">3</option>
+                </select>
+              </div>
+
+              <!-- Insurance -->
+              <div class="flex flex-col w-1/2 mb-4">
+                <label for="" class="font-bold">Insurance</label>
+                <select
+                  id="input-insurance"
+                  value=""
+                  class="mt-1 w-full px-3 py-2 bg-slate-200 border border-slate-400 rounded-md text-sm font-medium shadow-md placeholder-slate-400 focus:outline-sky-500"
+                >
+                  <option name="" id="">BPJS</option>
+                  <option name="" id="">Swasta</option>
+                </select>
+              </div>
+            </div>
+          </form>
+
+          <!-- Button Add -->
+          <div class="flex justify-end mb-5">
+            <input
+              id="add-btn"
+              type="submit"
+              class="bg-blue-500 text-white px-3 py-1 rounded-md"
+              value="Add Patient"
+            />
+          </div>
+
+          <hr />
+          <!-- Data Table -->
+          <div class="h-fit flex flex-col text-sm mt-5">
+            <table id="table-patient">
+              <thead class="text-left bg-slate-50">
+                <tr>
+                  <th class="px-4 py-2">No</th>
+                  <th class="px-4 py-2">Full Name</th>
+                  <th class="px-4 py-2">Birth Date</th>
+                  <th class="px-4 py-2">Gender</th>
+                  <th class="px-4 py-2">Room Class</th>
+                  <th class="px-4 py-2">Insurance</th>
+                  <th class="px-4 py-2">Option</th>
+                </tr>
+              </thead>
+              <tbody id="patient-data"></tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
