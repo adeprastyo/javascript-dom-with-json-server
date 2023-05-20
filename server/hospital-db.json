@@ -1,52 +1,44 @@
 {
   "patient": [
     {
-      "name": "Test",
-      "birthDate": "1997-08-27",
+      "name": "Ade Prastyo",
+      "birthDate": "2023-01-01",
       "gender": "Male",
       "room": "VVIP",
+      "insurance": "BPJS",
+      "id": 1
+    },
+    {
+      "name": "Ade Prastyo",
+      "birthDate": "2023-03-14",
+      "gender": "Male",
+      "room": "VVIP",
+      "insurance": "Swasta",
+      "id": 2
+    },
+    {
+      "name": "Budi",
+      "birthDate": "2022-12-14",
+      "gender": "Male",
+      "room": "VIP",
+      "insurance": "BPJS",
+      "id": 3
+    },
+    {
+      "name": "Ahmad",
+      "birthDate": "2023-01-25",
+      "gender": "Male",
+      "room": "3",
+      "insurance": "Swasta",
+      "id": 4
+    },
+    {
+      "name": "Putri",
+      "birthDate": "2023-02-09",
+      "gender": "Male",
+      "room": "1",
       "insurance": "BPJS",
       "id": 5
-    },
-    {
-      "name": "Test",
-      "birthDate": "1997-08-27",
-      "gender": "Male",
-      "room": "VVIP",
-      "insurance": "BPJS",
-      "id": 6
-    },
-    {
-      "name": "Test",
-      "birthDate": "1997-08-27",
-      "gender": "Male",
-      "room": "VVIP",
-      "insurance": "BPJS",
-      "id": 7
-    },
-    {
-      "name": "Test",
-      "birthDate": "1997-08-27",
-      "gender": "Male",
-      "room": "VVIP",
-      "insurance": "BPJS",
-      "id": 8
-    },
-    {
-      "name": "ade",
-      "birthDate": "2023-04-01",
-      "gender": "Male",
-      "room": "VVIP",
-      "insurance": "Swasta",
-      "id": 9
-    },
-    {
-      "name": "ade",
-      "birthDate": "2023-04-01",
-      "gender": "Female",
-      "room": "1",
-      "insurance": "Swasta",
-      "id": 10
     }
   ]
 }

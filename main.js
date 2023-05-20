@@ -114,6 +114,8 @@ function addPatient() {
 
       btn.appendChild(document.createTextNode("Delete"));
       tdDeleteBtn.appendChild(btn);
+
+      alert("Add Data Success!");
     })
     .catch((error) => {
       console.error(error);
@@ -132,6 +134,7 @@ function deletePatient(id) {
     .catch((error) => {
       console.error(error);
     });
+  alert("Delete Data Success!");
 }
 
 getPatient();
